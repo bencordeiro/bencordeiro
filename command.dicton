@@ -1,2 +1,3 @@
+cowsay -f stegosaurus Script By Benjamin Cordeiro
 cat file.file | tr -d "\t\n\r" - Remove spaces from file
 xxd | grep -i flag - hex editor
