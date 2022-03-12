@@ -201,3 +201,6 @@ I=y
 		echo "Goodbye"
 		exit
 	fi
+	
+	# TODO
+	# | tr 'A-Za-z' 'N-ZA-Mn-za-m'
