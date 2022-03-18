@@ -1,0 +1,9 @@
+import subprocess
+for x in range (0,100000):
+  proc = subprocess.Popen('./The_Program', stdin=subprocess.PIPE
+  proc.communicate(str(x))
+  if proc.returncode:
+    continue
+    
+    #break
+  print "Tried Password: " + str(x)
