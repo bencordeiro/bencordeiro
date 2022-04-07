@@ -49,7 +49,7 @@ Help() {
 }
 
 chk() {
-		sudo apt list --installed | grep -i 'steghide\|exiftool\|foremost'
+		sudo apt list --installed | grep -i 'steghide\|exiftool\|foremost\|hxtools'
 	if [ $? -eq 0 ]; then
 		U_U=y
 		echo
@@ -76,7 +76,7 @@ D=y
 
 if [ $D = y ]; then
         sudo apt-get update && sudo apt-get upgrade -y
-        sudo apt-get install exiftool libimage-exiftool-perl binutils foremost binwalk
+        sudo apt-get install exiftool libimage-exiftool-perl binutils foremost binwalk hxtools
         sudo apt-get install git -y
 fi
 }
@@ -172,9 +172,24 @@ echo
 		echo "No exifdata using parameter $flag_form."
 		echo
 		echo "The flag could be: Encrypted"
-		echo "Have Letter Substitiution / Cipher"
+		echo "Have Letter Substitiution / ROT / Cipher"
 		echo "Not in exifdata"
 	fi
+#echo
+#ROT=y
+#	read -p "ROT13 String? (Y/n)" var_rot
+#	[ -n "var_rot" ] && ROT=$var_rot
+
+#	if [ $ROT = y ]; then
+#		read string_rot
+#		echo $string_rot | tr 'A-Za-z' 'N-ZA-Mn-za-m' | tee rot_string.out
+#		cat rot_string.out | grep -q $flag_form
+#	orrr? grep -q $flag_from rot_string.out
+#		if [ $? -eq 0 ]; then
+#			exit
+#	else
+#		echo "no luck with rot13 (sad face)"
+#	fi
 echo
 I=y
     read -p "Further inspect file? (Y/n)" var_i
