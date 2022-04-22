@@ -219,3 +219,4 @@ I=y
 	
 	# TODO
 	# | tr 'A-Za-z' 'N-ZA-Mn-za-m'
+	# | grep -oE "flag{.*}"
