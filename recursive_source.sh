@@ -2,7 +2,7 @@
 
 # Script: Recurisvely search for keywords in site mirror.
 
-############## Required Dependencies ##############
+############## Search -R ##############
 
 func() {
 echo
