@@ -21,6 +21,12 @@ GET=y
 
 if [ $GET = y ]; then
 	func
+fi
+
+########### Check for robots.txt ###########
+
+if curl $var_url | grep User-agent; then
+    echo "You should look in robots.txt"
 else
-	exit
+    echo "Nothing found in robots.txt"
 fi
