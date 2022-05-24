@@ -6,3 +6,4 @@ tr 'A-Za-z' 'N-ZA-Mn-za-m' - ROT13 using the tr command (transform)
 {command} | grep -oE "flag{.*}"
 cut -c 8- | Cuts starting words by 8 characters (http://)
 rev | cut -c2- | rev | Cuts end of words by 1 character
+man grep | grep -- -q - example of how grep dashes &| special characters
