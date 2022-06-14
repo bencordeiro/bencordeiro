@@ -1,3 +1,5 @@
+# python wway
+
 import subprocess
 for x in range (0,100000):
   proc = subprocess.Popen('./The_Program', stdin=subprocess.PIPE
@@ -7,3 +9,25 @@ for x in range (0,100000):
     
     #break
   print "Tried Password: " + str(x)
+
+
+
+
+
+
+# bash way 
+
+#!/bin/bash
+
+# Usage bash_brutepico.sh <script>
+# Script to bruteforce another bash script with user input
+# Will brute force with numbers from 0 to 1000000
+
+# Code to get the script name
+script=$1
+
+# run script that asks for user input and echo numbers from 0 to 1000000 into it
+for i in {0..1000000}
+do
+    echo $i | ./$script
+done
