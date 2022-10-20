@@ -1,4 +1,6 @@
 # python wway
+# used to brute force pico challenges
+# personally was able to get over 150 points with this!
 
 import subprocess
 for x in range (0,100000):
