@@ -1,0 +1,7 @@
+getting around problem: su : must be run from a terminal
+use:
+echo "import pty; pty.spawn('/bin/bash')" > /tmp/asdf.py
+python /tmp/asdf.py
+
+Good php script:
+https://github.com/pentestmonkey/php-reverse-shell
