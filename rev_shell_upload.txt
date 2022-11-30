@@ -5,3 +5,8 @@ python /tmp/asdf.py
 
 Good php script:
 https://github.com/pentestmonkey/php-reverse-shell
+
+edit script
+
+listener:
+nc -v -n -l -p ####
