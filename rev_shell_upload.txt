@@ -3,6 +3,8 @@ use:
 echo "import pty; pty.spawn('/bin/bash')" > /tmp/asdf.py
 python /tmp/asdf.py
 
+To Use Nano:
+export TERM=xterm
 Good php script:
 https://github.com/pentestmonkey/php-reverse-shell
 
